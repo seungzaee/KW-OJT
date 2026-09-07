@@ -1,50 +1,92 @@
-# React + TypeScript + Vite
+# KW-OJT
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+베트남 글로벌 인턴십 과정에서 진행한 **LMS(Learning Management System) 웹 서비스 개발 프로젝트**입니다.
 
-Currently, two official plugins are available:
+React와 TypeScript를 기반으로 프론트엔드 개발에 참여했으며,  
+로그인 페이지, 메인 대시보드, AI 챗봇 등 주요 사용자 화면을 구현하고 백엔드와 연동했습니다.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## Project Overview
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- **Period**: 2024.12 ~ 2025.01
+- **Type**: Team Project
+- **Program**: Kyungpook National University Vietnam Global Internship
+- **Project**: LMS Web Service Development
+- **Role**: Frontend Development
 
-- Configure the top-level `parserOptions` property like this:
+---
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## Tech Stack
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+### Frontend
+- React
+- TypeScript
+- Vite
+- React Router
+- Axios
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+### UI
+- Ant Design
+- Material UI
+- Tailwind CSS
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+### Backend / Database
+- Supabase
+- Firebase
+
+### Collaboration
+- Git
+- GitHub
+- Jira
+- Slack
+
+---
+
+## My Role
+
+프론트엔드 개발을 담당하며 사용자와 직접 맞닿는 주요 화면과 백엔드 연동 기능을 구현했습니다.
+
+### Login
+- 로그인 페이지 UI 구현
+- 사용자 인증 관련 백엔드 API 연동
+- 로그인 결과에 따른 화면 흐름 처리
+
+### Main Dashboard
+- LMS 메인 대시보드 UI 설계 및 구현
+- 백엔드에서 전달받은 데이터를 화면에 표시
+- 주요 정보를 한눈에 확인할 수 있도록 화면 구성
+
+### AI Chatbot
+- AI 챗봇 인터페이스 디자인 및 구현
+- 챗봇 기능과 프론트엔드 UI 연동
+- 사용자 입력과 응답이 자연스럽게 이어지도록 화면 구성
+
+### Collaboration
+- Git / GitHub를 활용한 코드 공유 및 버전 관리
+- Jira를 활용한 작업 관리 및 진행 상황 공유
+- Slack을 활용한 팀 커뮤니케이션
+
+---
+
+## Main Features
+
+- 사용자 로그인 및 인증
+- 메인 대시보드
+- AI 챗봇
+- LMS 학습 관련 주요 화면
+- 백엔드 API 및 데이터 연동
+
+---
+
+## Project Structure
+
+```text
+src/
+├── app
+├── assets
+├── features
+├── pages
+├── services
+├── shared
+└── supabase
